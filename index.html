@@ -1926,11 +1926,6 @@ grid.arrange(g1, g2, ncol=2)</code></pre>
 pays entre les deux périodes représentées. Il semble qu’avec le temps,
 il se desinne une relation non linéaire entre l’espérance de vie et le
 PIB visible sous la forme d’un boomrang.</p>
-<pre class="r"><code>annees_ordonnees = sort(unique(gapminder$year))
-premiere_annee = annees_ordonnees[1]
-derniere_annee = annees_ordonnees[length(annees_ordonnees)]
-message(paste0(&quot;Nous allons étudier les données parmi les années &quot;, premiere_annee, &quot; à &quot;, derniere_annee, &quot;.&quot;))</code></pre>
-<pre><code>## Nous allons étudier les données parmi les années 1952 à 2007.</code></pre>
 <pre class="r"><code>cor_spear = cor.test(gapminder_1992$gdpPercap, gapminder_1992$lifeExp, method = &quot;spearman&quot;, exact = FALSE)
 
 # Extract the Spearman&#39;s rho value
